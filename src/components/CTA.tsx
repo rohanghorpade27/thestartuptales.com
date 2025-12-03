@@ -26,7 +26,7 @@ const CTA: React.FC = () => {
             
             <div className="flex-shrink-0">
               <a 
-                href="https://docs.google.com/forms" // Placeholder for actual form
+                href="https://forms.gle/fULLCWX5ts91xhCD9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 bg-white text-red-600 px-8 py-5 rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-1"

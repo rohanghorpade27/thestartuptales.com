@@ -10,11 +10,11 @@ export const NAV_LINKS = [
 ];
 
 export const STATS: StatItem[] = [
-  { id: 1, value: '100+', label: 'Startups Gathered', description: 'Across India' },
+  { id: 1, value: '999+', label: 'Startups Gathered', description: 'Across India' },
   // { id: 2, value: '100+', label: 'Startup Stories', description: 'Covered in depth' },
   { id: 3, value: '20+', label: 'Podcasts Hosted', description: 'With industry leaders' },
-  { id: 4, value: '20+', label: 'Events Hosted', description: 'Pan-India presence' },
-  { id: 5, value: '1000+', label: 'Attendees', description: 'Active participants' },
+  { id: 4, value: '30+', label: 'Events Hosted', description: 'Pan-India presence' },
+  { id: 5, value: '10000+', label: 'Attendees', description: 'Active participants' },
   { id: 6, value: '100+', label: 'Angel Investors', description: 'In our exclusive pool' },
 ];
 

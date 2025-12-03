@@ -18,13 +18,25 @@ const Footer: React.FC = () => {
               Leveling up ideas. Join the movement that's reshaping the Indian startup landscape from Bangalore to the world.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/company/startuptalescommunity" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors group">
+              <a
+                href="https://www.linkedin.com/company/startuptalescommunity"
+                target="_blank"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors group"
+              >
                 <Linkedin className="w-5 h-5 text-gray-400 group-hover:text-white" />
               </a>
-              <a href="https://youtube.com/@thestartuptales" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors group">
+              <a
+                href="https://youtube.com/@thestartuptales"
+                target="_blank"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors group"
+              >
                 <Youtube className="w-5 h-5 text-gray-400 group-hover:text-white" />
               </a>
-              <a href="https://www.instagram.com/thestartuptales.in" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors group">
+              <a
+                href="https://www.instagram.com/thestartuptales.in"
+                target="_blank"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors group"
+              >
                 <Instagram className="w-5 h-5 text-gray-400 group-hover:text-white" />
               </a>
             </div>
