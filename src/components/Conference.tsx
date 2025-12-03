@@ -18,6 +18,14 @@ const Conference: React.FC = () => {
     };
   }, [selectedMedia]);
 
+  const getYouTubeEmbedUrl = (url: string): string => {
+    const videoIdMatch = url.match(/[?&]v=([^&]+)/);
+    if (videoIdMatch && videoIdMatch[1]) {
+      return `https://www.youtube.com/embed/${videoIdMatch[1]}`;
+    }
+    return url;
+  };
+
   return (
     <section id="conference" className="py-24 bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -98,11 +106,11 @@ const Conference: React.FC = () => {
             >
               {selectedMedia.type === 'video' ? (
                 <div className="w-full aspect-video rounded-xl overflow-hidden shadow-2xl bg-black border border-white/10">
-                  <iframe 
-                    src={`${selectedMedia.url}?autoplay=1&rel=0`}
+                  <iframe
+                    src={`${getYouTubeEmbedUrl(selectedMedia.url)}?autoplay=1&rel=0`}
                     title={selectedMedia.caption}
                     className="w-full h-full"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   />
                 </div>
