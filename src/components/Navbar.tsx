@@ -15,48 +15,35 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
-      }`}
-    >
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center gap-2">
+          <img src="/src/assets/images/TST_logo_nobg.png" className="w-20 h-full object-cover transition-transform duration-500 hover:scale-105" />
+          {/* <div className="flex-shrink-0 flex items-center gap-2">
             <div className="w-8 h-8 bg-red-600 rounded-lg transform rotate-45 flex items-center justify-center">
               <span className="text-white font-bold -rotate-45">S</span>
             </div>
             <a href="#" className="text-2xl font-bold tracking-tighter text-black">
               The Startup Tales
             </a>
-          </div>
+          </div> */}
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {NAV_LINKS.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-gray-600 hover:text-red-600 font-medium transition-colors"
-              >
+              <a key={link.name} href={link.href} className="text-gray-600 hover:text-red-600 font-medium transition-colors">
                 {link.name}
               </a>
             ))}
-            <a
-              href="#programs"
-              className="bg-black text-white px-5 py-2.5 rounded-full font-medium hover:bg-red-600 transition-colors duration-300"
-            >
+            <a href="#programs" className="bg-black text-white px-5 py-2.5 rounded-full font-medium hover:bg-red-600 transition-colors duration-300">
               Join Us
             </a>
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-900 hover:text-red-600 focus:outline-none"
-            >
+            <button onClick={() => setIsOpen(!isOpen)} className="text-gray-900 hover:text-red-600 focus:outline-none">
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </div>

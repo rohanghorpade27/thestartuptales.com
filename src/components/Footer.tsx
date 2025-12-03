@@ -8,12 +8,13 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center gap-2 mb-6">
+            <img src="/src/assets/images/TST_logo_nobg.png" className="w-24 bg-white p-2 rounded mb-4 object-cover transition-transform duration-500 hover:scale-105" />
+            {/* <div className="flex items-center gap-2 mb-6">
               <div className="w-8 h-8 bg-red-600 rounded-lg transform rotate-45 flex items-center justify-center">
                 <span className="text-white font-bold -rotate-45">S</span>
               </div>
               <span className="text-2xl font-bold tracking-tighter">The Startup Tales</span>
-            </div>
+            </div> */}
             <p className="text-gray-400 max-w-sm leading-relaxed mb-8">
               Leveling up ideas. Join the movement that's reshaping the Indian startup landscape from Bangalore to the world.
             </p>

@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
           {/* Right Column: Visual Composition */}
           <div className="relative hidden lg:block h-[500px]">
             {/* Main Image / Abstract Shape */}
-            <motion.div
+            {/* <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.8 }}
@@ -97,7 +97,7 @@ const Hero: React.FC = () => {
               <div className="w-[300px] h-[300px] rounded-full bg-red-50/50 flex items-center justify-center animate-pulse">
                 <div className="text-9xl font-black text-red-600/10 select-none">ST</div>
               </div>
-            </motion.div>
+            </motion.div> */}
 
             {/* Floating Card 1: Podcast */}
             <motion.div
