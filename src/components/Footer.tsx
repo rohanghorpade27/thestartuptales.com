@@ -1,6 +1,7 @@
 import React from 'react';
 import { Instagram, Linkedin, Youtube, Facebook, Heart } from 'lucide-react';
 import { NAV_LINKS } from '../constants';
+import TSTLogo from '../assets/images/TST_logo_nobg.png';
 
 const Footer: React.FC = () => {
   return (
@@ -8,7 +9,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
-            <img src="/src/assets/images/TST_logo_nobg.png" className="w-24 bg-white p-2 rounded mb-4 object-cover transition-transform duration-500 hover:scale-105" />
+            <img src={TSTLogo} alt="The Startup Tales Logo" className="w-24 bg-white p-2 rounded mb-4 object-cover transition-transform duration-500 hover:scale-105" />
             {/* <div className="flex items-center gap-2 mb-6">
               <div className="w-8 h-8 bg-red-600 rounded-lg transform rotate-45 flex items-center justify-center">
                 <span className="text-white font-bold -rotate-45">S</span>

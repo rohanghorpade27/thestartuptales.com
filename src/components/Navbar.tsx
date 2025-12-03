@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { NAV_LINKS } from '../constants';
+import TSTLogo from '../assets/images/TST_logo_nobg.png';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,7 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <img src="/src/assets/images/TST_logo_nobg.png" className="w-20 h-full object-cover transition-transform duration-500 hover:scale-105" />
+          <img src={TSTLogo} alt="The Startup Tales Logo" className="w-20 h-full object-cover transition-transform duration-500 hover:scale-105" />
           {/* <div className="flex-shrink-0 flex items-center gap-2">
             <div className="w-8 h-8 bg-red-600 rounded-lg transform rotate-45 flex items-center justify-center">
               <span className="text-white font-bold -rotate-45">S</span>

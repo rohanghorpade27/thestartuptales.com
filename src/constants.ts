@@ -1,5 +1,13 @@
 import { Handshake, Rocket, Mic, Calendar, Users, Megaphone } from 'lucide-react';
 import { StatItem, ProgramItem, EventItem, MediaItem } from './types';
+import pitchCircuit3 from './assets/images/pitch-circult-3.avif';
+import DSC01204 from './assets/images/DSC01204.JPG';
+import DSC02103 from './assets/images/DSC02103.JPG';
+import DSC02127 from './assets/images/DSC02127.jpg';
+import DSC01239 from './assets/images/DSC01239.JPG';
+import oHkt1SXEi7oHD from './assets/images/oHkt1SXEi7o-HD.jpg';
+import Q9_M4kfkj8YHD from './assets/images/Q9_M4kfkj8Y-HD.jpg';
+import gyG6AJxlLOoHD from './assets/images/gyG6AJxlLOo-HD.jpg';
 
 export const NAV_LINKS = [
   { name: 'Home', href: '#home' },
@@ -69,36 +77,36 @@ export const UPCOMING_EVENTS: EventItem[] = [
     location: 'Bengaluru (shared upon confirmation)',
     date: 'Dec 12, 2024',
     time: '6:00 PM IST',
-    image: '/src/assets/images/pitch-circult-3.avif',
+    image: pitchCircuit3,
     category: '',
     url: 'https://luma.com/qw2y0km8',
   },
 ];
 
 export const MEDIA_GALLERY: MediaItem[] = [
-  { id: 1, type: 'photo', url: '/src/assets/images/DSC01204.JPG', caption: 'Pitch Circuit 1' },
+  { id: 1, type: 'photo', url: DSC01204, caption: 'Pitch Circuit 1' },
   {
     id: 2,
     type: 'video',
     url: 'https://www.youtube.com/watch?v=oHkt1SXEi7o',
-    thumbnail: '/src/assets/images/oHkt1SXEi7o-HD.jpg',
+    thumbnail: oHkt1SXEi7oHD,
     caption: 'How a College Dropout Hacked His Way to a $100M Company | Podcast',
   },
-  { id: 3, type: 'photo', url: '/src/assets/images/DSC02103.JPG', caption: 'Pitch Circuit 2' },
-  { id: 4, type: 'photo', url: '/src/assets/images/DSC02127.jpg', caption: 'Networking Session' },
+  { id: 3, type: 'photo', url: DSC02103, caption: 'Pitch Circuit 2' },
+  { id: 4, type: 'photo', url: DSC02127, caption: 'Networking Session' },
   {
     id: 5,
     type: 'video',
     url: 'https://www.youtube.com/watch?v=Q9_M4kfkj8Y',
-    thumbnail: '/src/assets/images/Q9_M4kfkj8Y-HD.jpg',
+    thumbnail: Q9_M4kfkj8YHD,
     caption: "Built STAN - A Gaming Founder's Wild Ride | Podcast",
   },
-  { id: 6, type: 'photo', url: '/src/assets/images/DSC01239.JPG', caption: 'Team Building' },
+  { id: 6, type: 'photo', url: DSC01239, caption: 'Team Building' },
   {
     id: 7,
     type: 'video',
     url: 'https://www.youtube.com/watch?v=gyG6AJxlLOo',
-    thumbnail: '/src/assets/images/gyG6AJxlLOo-HD.jpg',
+    thumbnail: gyG6AJxlLOoHD,
     caption: 'Why You Should Start a Microgreens Business in India',
   },
 ];
