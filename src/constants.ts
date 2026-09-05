@@ -10,11 +10,9 @@ import Q9_M4kfkj8YHD from './assets/images/Q9_M4kfkj8Y-HD.jpg';
 import gyG6AJxlLOoHD from './assets/images/gyG6AJxlLOo-HD.jpg';
 
 export const NAV_LINKS = [
-  { name: 'Home', href: '#home' },
-  { name: 'Analytics', href: '#analytics' },
-  { name: 'Programs', href: '#programs' },
-  { name: 'Conference', href: '#conference' },
-  { name: 'Events', href: '#events' },
+  { name: 'Home', href: '/' },
+  { name: 'Events', href: '/events' },
+  { name: 'Pitch Circuit', href: '/pitch-circuit' },
 ];
 
 export const STATS: StatItem[] = [
@@ -70,18 +68,7 @@ export const PROGRAMS: ProgramItem[] = [
   },
 ];
 
-export const UPCOMING_EVENTS: EventItem[] = [
-  {
-    id: 1,
-    title: 'Pitch circuit 3',
-    location: 'Bengaluru (shared upon confirmation)',
-    date: 'Dec 12, 2024',
-    time: '6:00 PM IST',
-    image: pitchCircuit3,
-    category: '',
-    url: 'https://luma.com/qw2y0km8',
-  },
-];
+// Events are now fetched dynamically from the backend (/api/events)
 
 export const MEDIA_GALLERY: MediaItem[] = [
   { id: 1, type: 'photo', url: DSC01204, caption: 'Pitch Circuit 1' },

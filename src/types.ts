@@ -16,13 +16,15 @@ export interface ProgramItem {
 
 export interface EventItem {
   id: number;
-  title: string;
-  location: string;
-  date: string;
-  time: string;
-  image: string;
-  category: string;
-  url: string;
+  "event name": string;
+  host: string;
+  "date and time": string;
+  venue: string;
+  "registration link": string;
+  "image url": string;
+  city?: string;
+  coords?: [number, number];
+  isTBA?: boolean;
 }
 
 export interface MediaItem {
